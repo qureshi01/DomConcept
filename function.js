@@ -18,6 +18,8 @@ console.log([50,30].reduce(sum));
 
 //Recursive Function (regular function)
 
+//Factorial code
+
 function factorial(n){
     if(n==0){
         return 1;
