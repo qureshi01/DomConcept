@@ -6,6 +6,7 @@ let sum3= function(a,b){
 
 //assigning a function as a value to the variable
 console.log(sum3(10,20));
+console.log(typeof sum3);
 
 //Regular Function
 
