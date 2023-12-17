@@ -30,3 +30,49 @@ function factorial(n){
 
 console.log(factorial(4));
 
+let obj ={
+    name: "Hashim",
+    roll: 12,
+    play: function(){
+        console.log("Function call")
+        return 10+20;
+    },
+    sleep: function(){
+        console.log("Function call")
+        return 10+20;
+    }
+}
+
+console.log(obj.name);
+console.log(obj.play()); //function can be implemented inside the object and called.
+
+console.log("-----------------");
+
+
+//Anonymous Function :- Function without name and declared in a variable
+let y= function(){
+    console.log("Function Called")
+}
+y();
+
+console.log("-----------------");
+
+
+//Short Hand Method Defintion
+
+let obj1 ={
+    name: "Hashim",
+    roll: 12,
+    subjects:["Science","CS","Maths"],
+    play(...subject){
+        this.subjects.push(...subject);
+        this.subjects.map(function(subject){
+            console.log(subject);
+        })
+    }
+}
+
+console.log(obj1.name);
+obj1.play("history","geography");
+
+
